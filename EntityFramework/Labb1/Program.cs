@@ -10,6 +10,16 @@ namespace Labb1
     {
         static void Main(string[] args)
         {
+            using (var context = new WebShopGr7Entities())
+            {
+                var kund = from x in context.tbl_User where x.Lastname.Equals("Weidmar") select x;
+
+
+
+                Console.WriteLine(kund.First().Adress);
+            }
+
+            Console.ReadKey();
         }
     }
 }

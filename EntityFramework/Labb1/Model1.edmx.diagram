@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f3725fd14b25403b9133ec40a3cf0873" Name="Diagram1">
+        <EntityTypeShape EntityType="WebShopGr7Model.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Attribute" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Audit" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Brand" Width="1.5" PointX="5.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Carrier" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Category" Width="1.5" PointX="5.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Order_Product_Attribute" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Page" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Payment" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Product" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_Product_Attribute" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebShopGr7Model.tbl_User" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Product_tbl_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Order_tbl_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Product_tbl_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Order_Product_Attribute_tbl_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Order_tbl_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Order_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="WebShopGr7Model.FK_tbl_Order_Product_Attribute_tbl_Product_Attribute" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
