@@ -9,6 +9,7 @@ namespace Labb_4._3
     class Application
     {
         AuthorDAL db;
+        bool verbose = false;
 
         public Application()
         {
@@ -27,6 +28,7 @@ namespace Labb_4._3
 5). Uppdatera författare.
 6). Ta bort författare.
 7). Uppdatera författares ålder med id.
+V). Verbose true / False.
 Q). Quit");
                 Console.Write("Val: ");
 
@@ -78,6 +80,13 @@ Q). Quit");
                             var newAgeChangeAge = Console.ReadLine();
                             db.UpdateAutherAgeById(id, newAgeChangeAge);
                             break;
+                        case "v":
+                            if (verbose)
+                                verbose = false;
+                            else
+                                verbose = true;
+                            Console.WriteLine($"Verbose: {verbose}");
+                            break;
                         case "q":
                             return;
                         default:
@@ -88,7 +97,10 @@ Q). Quit");
                 catch (Exception ex)
                 {
                     Console.WriteLine();
-                    Console.WriteLine(ex.Message);
+                    if (verbose)
+                        Console.WriteLine(ex);
+                    else
+                        Console.WriteLine(ex.Message);
                 }
                 finally
                 {
